@@ -7,8 +7,8 @@
     "test": "test"
   },
   "dependencies":{
-    "jsonwebtoken": "^5.0.4",
-  }
+    "jsonwebtoken": "^5.0.4"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/jmlaya/jwt-refresh-token.git"
