@@ -8,8 +8,6 @@ module.exports =
     catch err
       return new jwt.JsonWebTokenError("invalid token")
 
-    return new jwt.JsonWebTokenError("invalid token") unless decodedToken
-
     options = {} if typeof options is "undefined"
 
     if typeof payload.exp isnt "undefined"

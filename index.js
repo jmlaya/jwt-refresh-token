@@ -14,9 +14,6 @@
         err = _error;
         return new jwt.JsonWebTokenError("invalid token");
       }
-      if (!decodedToken) {
-        return new jwt.JsonWebTokenError("invalid token");
-      }
       if (typeof options === "undefined") {
         options = {};
       }
