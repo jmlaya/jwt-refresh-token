@@ -6,15 +6,14 @@
 
   module.exports = {
     refresh: function(token, secretOrPrivateKey, options) {
-      var decodedToken, err, limitDate, payload;
-      decodedToken = void 0;
+      var err, limitDate, payload;
+      payload = void 0;
       try {
-        decodedToken = jwt.decode(token);
+        payload = jwt.decode(token);
       } catch (_error) {
         err = _error;
         return new jwt.JsonWebTokenError("invalid token");
       }
-      payload = decodedToken.payload;
       if (!decodedToken) {
         return new jwt.JsonWebTokenError("invalid token");
       }

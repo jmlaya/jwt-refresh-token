@@ -2,13 +2,11 @@ jwt = require('jsonwebtoken')
 
 module.exports =
   refresh: (token, secretOrPrivateKey, options)->
-    decodedToken = undefined
+    payload = undefined
     try
-      decodedToken = jwt.decode(token)
+      payload = jwt.decode(token)
     catch err
       return new jwt.JsonWebTokenError("invalid token")
-
-    payload = decodedToken.payload
 
     return new jwt.JsonWebTokenError("invalid token") unless decodedToken
 
