@@ -1,0 +1,32 @@
+{
+  "name": "jwt-refresh-token",
+  "version": "0.0.1",
+  "description": "A simple implementation of refresh token for jsonwebtoken module",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "dependencies":{
+    "jsonwebtoken": "^5.0.4",
+  }
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jmlaya/jwt-refresh-token.git"
+  },
+  "keywords": [
+    "jwt",
+    "node-jwt",
+    "jsonwebtoken",
+    "refresh",
+    "oauth2"
+  ],
+  "author": "José Laya",
+  "licenses": {
+    "type": "MIT",
+    "url": "https://github.com/jmlaya/jwt-refresh-token/blob/master/LICENSE"
+  },
+  "bugs": {
+    "url": "https://github.com/jmlaya/jwt-refresh-token/issues"
+  },
+  "homepage": "https://github.com/jmlaya/jwt-refresh-token#readme"
+}
