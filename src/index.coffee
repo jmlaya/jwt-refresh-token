@@ -18,7 +18,7 @@ module.exports =
       if Math.floor(Date.now() / 1000) >= Math.floor(limitDate / 1000)
         return new jwt.TokenExpiredError('jwt expired', new Date(payload.exp * 1000))
       else
-        return jwt.sign payload, process.env.TOKEN_SECRET or "oursecret", {expiresInMinutes: 1}
+        return jwt.sign payload, secretOrPrivateKey, options
     else
       return token
 
