@@ -1,12 +1,12 @@
 {
   "name": "jwt-refresh-token",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple implementation of refresh token for jsonwebtoken module",
   "main": "index.js",
   "scripts": {
     "test": "test"
   },
-  "dependencies":{
+  "dependencies": {
     "jsonwebtoken": "^5.0.4"
   },
   "repository": {
